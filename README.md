@@ -15,6 +15,11 @@ During my research, I found applications in finance is the easiest due to the nu
 However, I did not look at how a quantum algorithm may be modified to better accommodate creating the paths that a
 derivatives may take over time (i.e. the price vs time of a derivative) and just assumed that they can be generated.
 
+Future research ideas:
+- How quantum algorithm can be modified to price options?
+- Optimization problems (linked to portfolio optimization)
+- Estimating the Greeks and Economic Capital Requirements
+
 Here are applications in Finance include:
 - Pricing Path-Independent Options (e.g. European Call and Put Option)
   - [Option Pricing using Quantum Computers](https://arxiv.org/pdf/1905.02666.pdf)
@@ -44,7 +49,12 @@ This is a good lead for more.
 - Proximity-Oblivious Testers (POTs) can be improved if they utilised random sampling (depends on how they work)
   - Found a specific example that solved the problem of determine if a bit string was sorted (this one example had a proof that I could understand)
   - There are potentially more applications in the additional exercises in the lecture notes that I couldn't prove.
-- The lecture notes from [Tel-Aviv University](https://www.wisdom.weizmann.ac.il/~oded/PDF/dana-tech.pdf) and [Weizmann Institute of Science](https://www.wisdom.weizmann.ac.il/~oded/PDF/dana-tech.pdf) are a good place to start.
+- The lecture notes from [Tel-Aviv University](https://www.wisdom.weizmann.ac.il/~oded/PDF/dana-tech.pdf)
+  and [Weizmann Institute of Science](https://www.wisdom.weizmann.ac.il/~oded/PDF/pt-v3.pdf) are a good place to
+  start.
+- [Hamoudi's PhD Thesis](https://yassine-hamoudi.github.io/files/other/PhDthesis.pdf) has a good section on determining
+  the number of edges in an adjacent list graph using sampling
+  - Triangle Counting is another likely application (could not understand the algorithm).
 
 
 ## Data Streaming Algorithms
@@ -52,9 +62,12 @@ This is a good lead for more.
 - Didn't end up finding an application
   - Most of the algorithm didn't utilise random sampling
   - Instead, they utilise estimators that are tailored to problems, which made it hard to include Monte Carlo Method
-- This topics likely has applications I didn't understand
-  - For example, in [Hamoudi's PhD](https://yassine-hamoudi.github.io/files/other/PhDthesis.pdf), he was able to determine that a quantum algorithm could lead to saving in terms of space relative to a classical algorithm when determing frequency moments for a stream.
-  - I don't understand how the algorithm works in Section 9.4 in the PhD paper but it could potentially be improved using the algorithm in O'Donnell's paper.
+- These topics likely has applications I didn't understand
+  - For example, in [Hamoudi's PhD](https://yassine-hamoudi.github.io/files/other/PhDthesis.pdf) Quantum Algorithms with
+    Limited Memory, he was able to determine that a quantum algorithm could lead to saving in terms of space relative to
+    a classical algorithm when determine frequency moments for a stream. 
+  - I don't understand how the algorithm works in Section 9.4 in the PhD paper, but it could potentially be improved
+    using the algorithm in O'Donnell's paper.
 
 ## Randomized Algorithms
 For randomized algorithms, I use the books:
@@ -63,8 +76,15 @@ For randomized algorithms, I use the books:
 
 I didn't find any applications here.
 Specifically, there weren't any algorithm that utilise random sampling in order to determine means.
-The randomized part of the algorithm usually came from a decision problem where the output is random (e.g. randomly choosing a pivot for Randomized QuickSort) instead of determining some quantity.
+The randomized part of the algorithm usually came from a decision problem where the output is random (e.g. randomly
+choosing a pivot for Randomized QuickSort) instead of determining some quantity.
+As a result, quantum Monte Carlo does not seem to help.
 
+## Determining Probability Distribution
+- Based on [Testing probability distribution underlying aggregated data](https://arxiv.org/pdf/1402.3835.pdf) 
+  - This feels very promising tho I haven't been able to look at more papers
+  - [Probability-Revealing Samples](http://proceedings.mlr.press/v84/onak18a/onak18a.pdf) includes more information
+    related to the first paper
 
 ## Misc
 This section includes any small tangents that I took during my research. 
@@ -83,9 +103,9 @@ They are generally quite small and I hit a dead end pretty quickly.
   - The [wikipedia article provides a summary](https://en.wikipedia.org/wiki/Monte_Carlo_method_in_statistical_physics) 
   - I couldn't find a specific example of a quantity that utilised this tho when I went through the book Monte Carlo Simulation in Statistical Physics: An Introduction Fifth Addition by Kurt Binder and Dieter W.Heermann.
   - This is likely due to my lack of understanding rather than a lack of uses tho as I did find something called a partition function that seems to use monte carlo but couldn't understand what it meant or what it was used for.
-    - [Quantum Speedup of Monte Carlo Methods](https://royalsocietypublishing.org/doi/10.1098/rspa.2015.0301#d3e10400) means partition functions.- Distinguishing Classical Probability Distributions
+    - [Quantum Speedup of Monte Carlo Methods](https://royalsocietypublishing.org/doi/10.1098/rspa.2015.0301#d3e10400) mentions partition functions.
 
-- Determining Probability Distributions
+- Distinguishing Classical Probability Distributions
   - [Quantum Algorithms for Distribution-Free Junta Testing](https://link.springer.com/chapter/10.1007/978-3-030-19955-5_5)
   - I couldn't understand the math pass what Hellinger Distance is defined to be and the O'Donnell's paper provided a good and concise use for it, so I didn't go any deeper.
   - There may be more applications hidden within determining distribution, but I am not too sure.
