@@ -9,6 +9,18 @@ explored, where I found uses, where I was stuck and any future paths that I
 found.
 
 I will also include links to any papers and articles that I found useful
+## TLDR: Future Research Ideas
+- Financial Applications
+  - Optimization problems (linked to portfolio optimization)
+  - Estimating the Greeks and Economic Capital Requirements
+- Property Testing Algorithms
+  - Estimating Graph Properties
+  - Improve Proximity-Oblivious Testers
+- Data Stream Algorithms
+  - Reduction in space-required for streaming algorithms
+- Determining Probability Distributions
+- Statistical Physics
+  - Partition Functions
 
 ## Financial Application
 During my research, I found applications in finance is the easiest due to the number of derivatives that utilised Monte Carlo method already.
@@ -16,9 +28,6 @@ However, I did not look at how a quantum algorithm may be modified to better acc
 derivatives may take over time (i.e. the price vs time of a derivative) and just assumed that they can be generated.
 
 Future research ideas:
-- How quantum algorithm can be modified to price options?
-- Optimization problems (linked to portfolio optimization)
-- Estimating the Greeks and Economic Capital Requirements
 
 Here are applications in Finance include:
 - Pricing Path-Independent Options (e.g. European Call and Put Option)
