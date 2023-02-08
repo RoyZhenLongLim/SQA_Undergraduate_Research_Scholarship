@@ -43,7 +43,7 @@ Here are applications in Finance include:
   - [Efficient Monte Carlo methods for value-at-risk](https://www0.gsb.columbia.edu/faculty/pglasserman/Other/masteringrisk.pdf)
     - This paper provides an explanation on Monte Carlo Method as well as a comparison between common methods to estimate VaR.
   - [Credit Risk Analysis using Quantum Comouters](https://arxiv.org/pdf/1907.03044.pdf)
-    - Goes through a quantum algorithm (didn't understand this lol) that allows for the estimation of VaR;
+    - Goes through a quantum algorithm (didn't understand this lol) that allows for the estimation of VaR.
 
 These papers are not specifically linked to Monte Carlo method or related to what I found in my research but may be worth a read.
 - [A Survey of Quantum Computing for Finance](https://arxiv.org/pdf/2201.02773.pdf)
