@@ -11,8 +11,8 @@ found.
 I will also include links to any papers and articles that I found useful
 ## TLDR: Future Research Ideas
 - Financial Applications
-  - Optimization problems (linked to portfolio optimization)
-  - Estimating the Greeks and Economic Capital Requirements
+  - Estimating the Greeks 
+  - Economic Capital Requirements
 - Property Testing Algorithms
   - Estimating Graph Properties
   - Improve Proximity-Oblivious Testers
